@@ -5,11 +5,11 @@
   "author": "Láyro Chrystofer <zaioll@protonmail.com>",
   "license": "SaaS",
   "scripts": {
-      "clear-dist": "rm -fr dist/*.js && rm -fr dist/*.map",
-      "clear-cache": "rm -fr ./.cache/*",
-      "clear": "yarn run clear-cache & yarn run clear-dist",
-      "dev": "./node_modules/.bin/parcel src/main.html",
-      "prod": "./node_modules/.bin/parcel build src/main.html"
+    "clear-dist": "rm -fr dist/*.js && rm -fr dist/*.map",
+    "clear-cache": "rm -fr ./.cache/*",
+    "clear": "yarn run clear-cache & yarn run clear-dist",
+    "dev": "./node_modules/.bin/parcel src/main.html",
+    "prod": "./node_modules/.bin/parcel build src/main.html"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
