@@ -7,11 +7,22 @@
   "scripts": {
     "clear-dist": "rm -fr dist/*.js && rm -fr dist/*.map",
     "clear-cache": "rm -fr ./.cache/*",
-    "clear": "yarn run clear-cache & yarn run clear-dist",
+    "clear-karma": "rm -fr ./.karma-parcel/*",
+    "clear": "yarn run clear-cache & yarn run clear-dist && yarn run clear-karma",
     "dev": "./node_modules/.bin/parcel src/main.html",
+    "tests": "./node_modules/.bin/karma start",
     "prod": "./node_modules/.bin/parcel build src/main.html"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "karma": "^5.2.3",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-firefox-launcher": "^1.3.0",
+    "karma-mocha": "^2.0.1",
+    "karma-parcel": "^0.5.2",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "mocha": "^8.1.3",
     "parcel-bundler": "^1.12.4"
   }
 }
