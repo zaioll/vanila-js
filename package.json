@@ -1,0 +1,7 @@
+{
+  "name": "my-money",
+  "version": "1.0.0",
+  "main": "/src/main.html",
+  "author": "Láyro Chrystofer <zaioll@protonmail.com>",
+  "license": "SaaS"
+}
